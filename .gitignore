@@ -1,0 +1,30 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Ignore all analysis folders except the template (and the analysis README)
+analysis/*
+!analysis/_template/
+!analysis/_template/**
+!analysis/README.md
+
+# Include scripts for all analyses (un-ignore directories, re-ignore contents, then allow scripts)
+!analysis/*/
+analysis/*/*
+!analysis/*/scripts/
+!analysis/*/scripts/**
+
+# raw sequencing / alignment data — never track anywhere, whatever the folder is called
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.gtf
+*.zip
+*.tab
+*.summary
+*.out
